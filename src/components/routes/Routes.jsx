@@ -1,7 +1,18 @@
+import { Route, Routes } from 'react-router-dom'
+import Results from '../results/Results'
+import Notfound from '../notfound/Notfound'
 
-
-export default function Routes() {
+export default function Routing() {
   return (
-    <div>Routes</div>
+    <div>
+      <Routes>        
+          <Route path='' element={<Results/>} />
+          <Route path='search' element={<Results/>} />
+          <Route path='news' element={<Results/>} />
+          <Route path='images' element={<Results/>} />
+          <Route path='videos' element={<Results/>} />
+          <Route path='*' element={<Notfound/>} />
+      </Routes>
+    </div>
   )
 }
