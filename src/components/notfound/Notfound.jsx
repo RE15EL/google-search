@@ -1,7 +1,7 @@
-
+import './Notfound.css';
 
 export default function Notfound() {
   return (
-    <div>Notfound</div>
+    <div className="nf w-screen h-screen"></div>
   )
 }
