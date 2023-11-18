@@ -8,9 +8,6 @@ export default function Routing() {
       <Routes>        
           <Route path='' element={<Results/>} />
           <Route path='search' element={<Results/>} />
-          <Route path='news' element={<Results/>} />
-          <Route path='images' element={<Results/>} />
-          <Route path='videos' element={<Results/>} />
           <Route path='*' element={<Notfound/>} />
       </Routes>
     </div>

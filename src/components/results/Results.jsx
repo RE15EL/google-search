@@ -15,7 +15,7 @@ useEffect(()=>{
   return (
     <div className="flex flex-wrap justify-center items-center space-y-6 sm:px-56">
       { !results.length > 0 
-          ? <div className="text-3xl"> Error fetching data </div>
+          ? <div className="text-3xl"> Error fetching data 😒 </div>
           : results.map( (item, i)=>{
               return  <div key={i} className="md:w-2/5 w-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700 mr-4 rounded-md">
                         <NavLink to={item.url} > 
